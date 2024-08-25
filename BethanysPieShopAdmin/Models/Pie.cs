@@ -13,7 +13,7 @@ namespace BethanysPieShopAdmin.Models
         [StringLength(100)]
         public string? ShortDescription { get; set; }
 
-        [StringLength(100)]
+        [StringLength(1000)]
         public string? LongDescription { get; set; }
 
         [StringLength(1000)]

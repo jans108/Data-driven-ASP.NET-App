@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|d:\\githubprojects\\data-driven-asp.net-app\\bethanyspieshopadmin\\models\\pie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|solutionrelative:bethanyspieshopadmin\\models\\pie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Migrations\\20240825172457_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BethanysPieShopAdmin\\Migrations\\20240825172457_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|d:\\githubprojects\\data-driven-asp.net-app\\bethanyspieshopadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|solutionrelative:bethanyspieshopadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|d:\\githubprojects\\data-driven-asp.net-app\\bethanyspieshopadmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|solutionrelative:bethanyspieshopadmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|d:\\githubprojects\\data-driven-asp.net-app\\bethanyspieshopadmin\\models\\configuration\\categoryentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|solutionrelative:bethanyspieshopadmin\\models\\configuration\\categoryentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|d:\\githubprojects\\data-driven-asp.net-app\\bethanyspieshopadmin\\models\\bethanyspieshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D105E43-3A77-4345-8D25-9A86E9B73909}|BethanysPieShopAdmin\\BethanysPieShopAdmin.csproj|solutionrelative:bethanyspieshopadmin\\models\\bethanyspieshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,79 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pie.cs",
-              "DocumentMoniker": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Models\\Pie.cs",
-              "RelativeDocumentMoniker": "BethanysPieShopAdmin\\Models\\Pie.cs",
-              "ToolTip": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Models\\Pie.cs",
-              "RelativeToolTip": "BethanysPieShopAdmin\\Models\\Pie.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:26:00.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240825172457_Initial.cs",
-              "DocumentMoniker": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Migrations\\20240825172457_Initial.cs",
-              "RelativeDocumentMoniker": "BethanysPieShopAdmin\\Migrations\\20240825172457_Initial.cs",
-              "ToolTip": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Migrations\\20240825172457_Initial.cs",
-              "RelativeToolTip": "BethanysPieShopAdmin\\Migrations\\20240825172457_Initial.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:24:57.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\appsettings.json",
-              "RelativeDocumentMoniker": "BethanysPieShopAdmin\\appsettings.json",
-              "ToolTip": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\appsettings.json",
-              "RelativeToolTip": "BethanysPieShopAdmin\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-25T16:38:15.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Program.cs",
               "RelativeDocumentMoniker": "BethanysPieShopAdmin\\Program.cs",
               "ToolTip": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Program.cs",
               "RelativeToolTip": "BethanysPieShopAdmin\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T16:38:01.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryEntityTypeConfiguration.cs",
-              "DocumentMoniker": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Models\\Configuration\\CategoryEntityTypeConfiguration.cs",
-              "RelativeDocumentMoniker": "BethanysPieShopAdmin\\Models\\Configuration\\CategoryEntityTypeConfiguration.cs",
-              "ToolTip": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Models\\Configuration\\CategoryEntityTypeConfiguration.cs",
-              "RelativeToolTip": "BethanysPieShopAdmin\\Models\\Configuration\\CategoryEntityTypeConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T16:35:11.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BethanysPieShopDbContext.cs",
-              "DocumentMoniker": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Models\\BethanysPieShopDbContext.cs",
-              "RelativeDocumentMoniker": "BethanysPieShopAdmin\\Models\\BethanysPieShopDbContext.cs",
-              "ToolTip": "D:\\GitHubProjects\\Data-driven-ASP.NET-App\\BethanysPieShopAdmin\\Models\\BethanysPieShopDbContext.cs",
-              "RelativeToolTip": "BethanysPieShopAdmin\\Models\\BethanysPieShopDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T16:25:31.391Z",
+              "WhenOpened": "2024-08-25T19:13:06.88Z",
               "EditorCaption": ""
             }
           ]

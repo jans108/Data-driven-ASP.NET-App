@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BethanysPieShopAdmin.Migrations
 {
     [DbContext(typeof(BethanysPieShopDbContext))]
-    [Migration("20240825172457_Initial")]
+    [Migration("20240825191200_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -93,6 +93,14 @@ namespace BethanysPieShopAdmin.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -101,8 +109,21 @@ namespace BethanysPieShopAdmin.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("OrderPlaced")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("OrderStatus")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("OrderTotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ZipCode")
                         .IsRequired()
@@ -170,8 +191,8 @@ namespace BethanysPieShopAdmin.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LongDescription")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("Name")
                         .IsRequired()
