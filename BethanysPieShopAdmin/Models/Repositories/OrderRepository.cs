@@ -16,7 +16,7 @@ namespace BethanysPieShopAdmin.Models.Repositories
         {
             return await _bethanysPieShopDbContext.Orders.Include(o =>
             o.OrderDetails).ThenInclude(od => od.Pie).OrderBy(o =>
-            o.OrderId).ToListAsync();
+            o.OrderId).AsNoTracking().ToListAsync();
         }
 
         public async Task<Order?> GetOrderDetailsAsync(int? orderId)
@@ -25,7 +25,7 @@ namespace BethanysPieShopAdmin.Models.Repositories
             {
                 var order = await _bethanysPieShopDbContext.Orders.Include(o =>
                 o.OrderDetails).ThenInclude(od => od.Pie).OrderBy(o => o.OrderId).Where
-                (o => o.OrderId == orderId.Value).FirstOrDefaultAsync();
+                (o => o.OrderId == orderId.Value).AsNoTracking().FirstOrDefaultAsync();
 
                 return order;
             }
