@@ -12,6 +12,21 @@ namespace BethanysPieShopAdmin.Models.Repositories
             _bethanysPieShopDbContext = bethanysPieShopDbContext;
         }
 
+        public async Task<int> AddCategoryAsync(Category category)
+        {
+            bool categoryWithSameNameExist = await
+                _bethanysPieShopDbContext.Categories.AnyAsync(c => c.Name == category.Name);
+
+            if (categoryWithSameNameExist)
+            {
+                throw new Exception("A category with the same name already exists");
+            }
+
+            _bethanysPieShopDbContext.Categories.Add(category);
+
+            return await _bethanysPieShopDbContext.SaveChangesAsync();
+        }
+
         public IEnumerable<Category> GetAllCategories()
         {
             return _bethanysPieShopDbContext.Categories.AsNoTracking().OrderBy(p => p.CategoryId);
