@@ -11,6 +11,7 @@ builder.Services.AddDbContext<BethanysPieShopDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("BethanysPieShopDbContextConnection")));
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IPieRepository, PieRepository>();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
