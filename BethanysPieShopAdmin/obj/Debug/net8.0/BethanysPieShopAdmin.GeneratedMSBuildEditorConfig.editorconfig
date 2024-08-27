@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GitHubProjects/Data-driven-ASP.NET-App/BethanysPieShopAdmin/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHubProjects/Data-driven-ASP.NET-App/BethanysPieShopAdmin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GitHubProjects/Data-driven-ASP.NET-App/BethanysPieShopAdmin/Views/Pie/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGllXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

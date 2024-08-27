@@ -12,6 +12,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("BethanysPieShopD
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IPieRepository, PieRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
