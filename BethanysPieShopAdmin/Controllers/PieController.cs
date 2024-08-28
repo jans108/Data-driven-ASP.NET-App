@@ -19,22 +19,47 @@ namespace BethanysPieShopAdmin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var pies = await _pieRepository.GetAllPiesAsync();
-            return View(pies);
+            try
+            {
+                var pies = await _pieRepository.GetAllPiesAsync();
+                return View(pies);
+            }
+            catch (Exception ex)
+            {
+                ViewData["ErrorMessage"] = $"There was an error: {ex.Message}";
+            }
+            return View();
         }
 
         public async Task<IActionResult> Details(int id)
         {
-            var pie = await _pieRepository.GetPieByIdAsync(id);
-            return View(pie);
+            try
+            {
+                var pie = await _pieRepository.GetPieByIdAsync(id);
+                return View(pie);
+            }
+            catch (Exception ex)
+            {
+                ViewData["ErrorMessage"] = $"There was an error: {ex.Message}";
+            }
+            return View();
         }
 
         public async Task<IActionResult> Add()
         {
-            var allCategories = await _categoryRepository.GetAllCategoriesAsync();
-            IEnumerable<SelectListItem> selectListItems = new SelectList(allCategories, "CategoryId", "Name", null);
-            PieAddViewModel pieAddViewModel = new() { Categories = selectListItems };
-            return View(pieAddViewModel);
+            try
+            {
+                IEnumerable<Category>? allCategories = await _categoryRepository.GetAllCategoriesAsync();
+                IEnumerable<SelectListItem> selectListItems = new SelectList(allCategories, "CategoryId", "Name", null);
+
+                PieAddViewModel pieAddViewModel = new() { Categories = selectListItems };
+                return View(pieAddViewModel);
+            }
+            catch (Exception ex)
+            {
+                ViewData["ErrorMessage"] = $"There was an error: {ex.Message}";
+            }
+            return View(new PieAddViewModel());
         }
 
         [HttpPost]
