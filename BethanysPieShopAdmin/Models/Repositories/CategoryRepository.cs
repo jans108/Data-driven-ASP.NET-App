@@ -27,6 +27,29 @@ namespace BethanysPieShopAdmin.Models.Repositories
             return await _bethanysPieShopDbContext.SaveChangesAsync();
         }
 
+        public async Task<int> DeleteCategoryAsync(int id)
+        {
+            var categoryToDelete = await
+                _bethanysPieShopDbContext.Categories.FirstOrDefaultAsync(c => c.CategoryId == id);
+
+            var piesInCategory = _bethanysPieShopDbContext.Pies.Any(p => p.CategoryId == id);
+
+            if (piesInCategory)
+            {
+                throw new Exception("Pies exist in this category. Delete all pies in this category before deleting the category.");
+            }
+
+            if (categoryToDelete != null)
+            {
+                _bethanysPieShopDbContext.Categories.Remove(categoryToDelete);
+                return await _bethanysPieShopDbContext.SaveChangesAsync();
+            }
+            else
+            {
+                throw new ArgumentException($"The category to delete can't be found.");
+            }
+        }
+
         public IEnumerable<Category> GetAllCategories()
         {
             return _bethanysPieShopDbContext.Categories.AsNoTracking().OrderBy(p => p.CategoryId);
