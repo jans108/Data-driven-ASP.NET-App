@@ -94,5 +94,49 @@ namespace BethanysPieShopAdmin.Controllers
 
             return View(pieAddViewModel);
         }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var allCategories = await _categoryRepository.GetAllCategoriesAsync();
+
+            IEnumerable<SelectListItem> selectListItems = new SelectList(allCategories, "CategoryId", "Name", null);
+
+            var selectedPie = await _pieRepository.GetPieByIdAsync(id.Value);
+
+            PieEditViewModel pieEditViewModel = new() { Categories = selectListItems, Pie = selectedPie };
+            return View(pieEditViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(PieEditViewModel pieEditViewModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    await _pieRepository.UpdatePieAsync(pieEditViewModel.Pie);
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Updating the pie failed, please try again! Error: {ex.Message}");
+            }
+
+            var allCategories = await _categoryRepository.GetAllCategoriesAsync();
+
+            IEnumerable<SelectListItem> selectListItems = new SelectList(allCategories, "CategoryId", "Name", null);
+            pieEditViewModel.Categories = selectListItems;
+            return View(pieEditViewModel);
+        }
     }
 }
