@@ -35,6 +35,8 @@ namespace BethanysPieShopAdmin.Models.Repositories
                 => c.PieId == pie.PieId);
             if (pieToUpdate != null)
             {
+                _bethanysPieShopDbContext.Entry(pieToUpdate).Property(
+                    "RowVersion").OriginalValue = pie.RowVersion;
                 pieToUpdate.CategoryId = pie.CategoryId;
                 pieToUpdate.ShortDescription = pie.ShortDescription;
                 pieToUpdate.LongDescription = pie.LongDescription;
